@@ -1,0 +1,193 @@
+// Cyanicotine theme based on Abricotine Dark Theme
+
+// USER INTERFACE
+// ==============
+
+// Main
+@ui-font-size: 17px;
+@ui-background-color: #10151a;
+
+// Pane
+@ui-pane-color: #cbe3e7;
+@ui-pane-background-color: #080808;
+@ui-pane-border-color: #10151a;
+.ui-pane-item() {
+}
+.ui-pane-item-hover() {
+    background: #10151a;
+    box-shadow: none;
+    text-shadow: none;
+}
+.ui-pane-item-active() {
+    background: #63f2f1;
+    color: #080808;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.2);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+}
+
+// CodeMirror dialogs
+@ui-dialog-color: @ui-pane-color;
+@ui-dialog-background: @ui-pane-background-color;
+@ui-dialog-button-background: #181A1F;
+@ui-dialog-button-focus-background: #0e0f12;
+@ui-dialog-button-color: #b0bcd0;
+@ui-dialog-border-color: @ui-pane-border-color;
+
+// Scrollbars
+@ui-scrollbar-track-color: #181A1F;
+@ui-scrollbar-color: #080808;
+@ui-scrollbar-hover-color: #eee;
+@ui-scrollbar-width: 10px;
+@ui-scrollbar-search-background: #080808;
+
+// EDITOR
+// ======
+
+// Text
+@editor-font-family: "Fira Code", Monaco, "DejaVu Sans Mono", "Lucida Console", "Andale Mono", monospace;
+@editor-ligatures: true;
+@editor-text-color: #cbe3e7;
+@editor-background-color: #10151a;
+
+// Headers
+.editor-headers() {
+    color: white;
+    font-family: "Bahnschrift", "Fira Code", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", sans-serif;
+}
+.editor-header-1() {
+    font-size: 290%;
+}
+.editor-header-2() {
+    font-size: 200%;
+    margin-bottom: 0.7em;
+    display: inline-block;
+}
+.editor-header-3() {
+    font-size: 150%;
+}
+.editor-header-4() {
+    font-size: 130%;
+}
+.editor-header-5() {
+    font-size: 80%;
+}
+.editor-header-6() {
+    font-size: 60%;
+}
+
+// Code
+@editor-code-font-family: "Fira Code", "Courier New", Courier, "Liberation Mono", monospace;
+
+.editor-code() {
+    color: #cbe3e7;
+    font-weight: bold;
+    background: #080808;
+}
+
+.codeblock, .codeblock-delimiter {
+    background: #080808;
+    border-radius: 4px;
+}
+
+// Quote
+.editor-quote() {
+    color: #aaffe4;
+    font-style: italic;
+}
+
+// List
+@editor-list-padding-left: 0;
+@editor-list-checked-color: #95ffa4;
+.editor-list() {
+    color: auto;
+}
+.editor-list-checked() {
+    text-decoration: line-through;
+}
+
+// Horizontal rule
+.editor-hr() {
+    color: #63f2f1;
+    display: inline-block;
+    width: 90vw;
+    max-width: 900px;
+    position: relative;
+    left: -20px;
+    text-align: center;
+}
+
+body.pane-visible .cm-hr {
+    width: ~"calc(90vw - 205px)";
+}
+
+// Image
+.editor-image() {
+    color: #63f2f1;
+}
+
+// Link and URL
+.editor-link() {
+    color: #aaffe4;
+    text-decoration: none;
+}
+.editor-link-href() {
+    color: #565575;
+}
+
+// Text formating
+.editor-em() {};
+.editor-strong() {};
+.editor-strikethrough() {};
+
+// Formatting marks and hidden characters
+@editor-formatting-color: #63f2f1;
+@editor-hidden-characters-color: #666;
+
+// Cursors and selections
+@editor-cursor-color: #fbfbfb;
+@editor-cursor-width: 2px;
+.editor-selection() {
+    background-color: #565575;
+}
+.editor-searching() {
+    background: transparent;
+    padding: 1px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+// Show blocks option
+@editor-block-margin-color: #10151a;
+@editor-block-margin-size: 5px;
+
+// Errors
+@error-color: #ff8080;
+@error-color-contrast: #cbe3e7;
+
+// CodeMirror code highlighting
+@cm-atom-color: #ffe9aa;
+@cm-attribute-color: #b9ca4a;
+@cm-builtin-color: #65b2ff;
+@cm-bracket-color: #ffb378;
+@cm-comment-color: #97a3aa;
+@cm-def-color: #95ffa4;
+@cm-header-color: #6a0d6a;
+@cm-hr-color: #91ddff;
+@cm-keyword-color: #c991e1;
+@cm-link-color: #ffe9aa;
+@cm-meta-color: #565575;
+@cm-node-color: #e8e8e8;
+@cm-number-color: #65b2ff;
+@cm-operator-color: #c991e1;
+@cm-property-color: #c9bce0;
+@cm-punctuation-color: auto;
+@cm-qualifier-color: #cbe3e7;
+@cm-quote-color: #95ffa4;
+@cm-string-color: #62d196;
+@cm-string-2-color: #91ddff;
+@cm-tag-color: #e8e8e8;
+@cm-variable-color: #91ddff;
+@cm-variable-2-color: #ff8080;
+@cm-variable-3-color: #f9602c;
+@cm-negative-color: #ff8080;
+@cm-positive-color: #95ffa4;
